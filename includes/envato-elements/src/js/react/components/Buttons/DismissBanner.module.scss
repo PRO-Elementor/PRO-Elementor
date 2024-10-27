@@ -1,0 +1,5 @@
+@import '../../../../scss/mixins';
+
+.dismissButton {
+  @include dismiss;
+}

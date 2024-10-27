@@ -1,0 +1,62 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  margin: $gridSpacingNormal;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  flex: 0 1 730px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: $gridSpacingNormal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contentWrapper {
+  flex: 0 1 567px;
+  padding: $gridSpacingNormal 0;
+}
+
+.subHeading {
+  @include heading;
+  font-size: 20px;
+}
+
+.mainHeading {
+  @include heading;
+}
+
+.whatsNew {
+  @include copy;
+}
+
+.videoWrapper {
+  background-image: url('../../../../images/welcome-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin: $gridSpacingNormal 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.videoIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+}

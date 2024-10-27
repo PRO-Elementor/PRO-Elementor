@@ -1,0 +1,13 @@
+@import '../../../../scss/mixins';
+
+.copy {
+  @include copy;
+}
+
+select {
+  &.select {
+    @include inputBox;
+    width: 100%;
+    padding: 3px 11px;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  margin: 0 0 $gridSpacingNormal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchFilter {
+  padding: 0 0 0 10px;
+}

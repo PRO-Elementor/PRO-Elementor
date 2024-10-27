@@ -1,0 +1,70 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  border-radius: 4px;
+  height: 100%;
+  overflow: visible;
+  position: relative;
+
+  &:hover {
+    &::before {
+      opacity: .15;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .07;
+    z-index: -1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: opacity .2s linear;
+  }
+}
+
+.inner {
+  height: 100%;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.images {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.meta {
+  margin-top: auto;
+  padding: 13px 20px 10px;
+}
+
+.cardTitle {
+  color: $textColorDarkest;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 10px 0 2px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  [dir='rtl'] & {
+    font-weight: 500;
+  }
+}
+
+.cardDescription {
+  @include copy;
+  margin: 0 0 13px;
+}

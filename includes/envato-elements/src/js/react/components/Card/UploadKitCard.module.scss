@@ -1,0 +1,58 @@
+@import '../../../../scss/mixins';
+
+.uploadCard {
+  position: relative;
+  padding-bottom: $cardResponsiveImagePadding; // This matches the other cards responsive "image area"
+  padding-top: 136px; // This matches the other cards "content area", we don't have this value hardcoded anywhere else unfortunately.
+  height: 100%; // This is so it matches up if the flex row grows larger than our values defined above.
+}
+
+.uploadCardButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px dashed rgba(0, 0, 0, 0.1);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.formInput {
+  display: none;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+
+  &::before {
+    background: rgba(153, 153, 153, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+    content: '\f132';
+    -webkit-font-smoothing: antialiased;
+    font: normal 74px/115px dashicons;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    position: absolute;
+    padding: 0;
+    text-shadow: none;
+    z-index: 4;
+    text-indent: -4px;
+  }
+}
+
+.message {
+  font-size: 18px;
+}

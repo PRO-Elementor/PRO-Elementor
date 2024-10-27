@@ -1,0 +1,35 @@
+@import '../../../../scss/mixins';
+
+.searchText {
+  max-width: 570px;
+  flex: 1;
+  position: relative;
+}
+
+.searchTextInput {
+  @include inputBox;
+}
+
+.searchTextSubmit {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  width: 30px;
+  height: $buttonAndInputHeight;
+  cursor: pointer;
+  border: 0;
+  overflow: hidden;
+  background-color: transparent;
+  color: #7bab48;
+  font-size: 23px;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+  [dir='rtl'] & {
+    right: unset;
+    left: 5px;
+  }
+}

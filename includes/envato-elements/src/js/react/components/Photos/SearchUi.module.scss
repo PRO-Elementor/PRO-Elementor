@@ -1,0 +1,68 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  margin: 0 0 $gridSpacingNormal;
+}
+
+.searchFilter {
+  max-width: 585px;
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+
+  > * {
+    margin-right: 15px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+  }
+}
+
+.viewToggle {
+  background: transparent;
+  border: 0;
+  height: 35px;
+  padding: 0;
+  width: 76px;
+  color: #767676;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-between;
+  line-height: 35px;
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.viewToggleGridIcon,
+.viewToggleMasonryIcon {
+  height: 35px;
+
+  path {
+    fill: #9ea3a8;
+  }
+}
+
+.viewToggleGrid {
+  .viewToggleGridIcon {
+    path {
+      fill: #0878b0;
+    }
+  }
+}
+
+.viewToggleMasonry {
+  .viewToggleMasonryIcon {
+    path {
+      fill: #0878b0;
+    }
+  }
+}

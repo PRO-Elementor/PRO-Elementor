@@ -1,0 +1,65 @@
+@import '../../../../scss/mixins';
+
+.copy {
+  @include copy;
+}
+
+.limitListItem {
+  padding: 0 0 14px 25px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    opacity: 0.7;
+    font-family: dashicons;
+    font-size: 16px;
+    vertical-align: bottom;
+    left: 0;
+  }
+}
+
+.limitOk {
+  @extend .limitListItem;
+
+  &::before {
+    content: '\f12a';
+    color: #80b341;
+  }
+}
+
+.limitError {
+  @extend .limitListItem;
+
+  &::before {
+    content: '\f153';
+    color: #ef3962;
+  }
+
+  .limitTitle {
+    color: #ef3962;
+  }
+
+  &[data-limit='elementor_pro'],
+  &[data-limit='permalinks'],
+  &[data-limit='elementor_fa5'],
+  &[data-limit='active_plugins'] {
+    &::before {
+      content: '\f534';
+      color: #efa639;
+    }
+
+    .limitTitle {
+      color: #efa639;
+    }
+  }
+
+}
+
+.limitTitle {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.limitMessage {
+  margin-left: 5px;
+}

@@ -1,0 +1,47 @@
+@import '../../../../../scss/mixins';
+
+.backgroundImage {
+  background-image: url('../../../../../images/subscription-required.png');
+  background-size: 266px 156px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 156px;
+  width: 266px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  [dir='rtl'] & {
+    background-position: left bottom;
+    right: unset;
+    left: 0;
+  }
+}
+
+.successIcon {
+  color: $borderColorSuccess;
+  font-size: 33px;
+  margin-right: 20px;
+}
+
+.connectedTitle {
+  display: flex;
+  align-items: center;
+}
+
+.envatoLogo {
+  margin-right: 10px;
+
+  path {
+    fill: $colorGreen;
+  }
+}
+
+.downloadText {
+  @include copy;
+  margin: 0;
+}
+
+.unlimitedText {
+  @include copy;
+}

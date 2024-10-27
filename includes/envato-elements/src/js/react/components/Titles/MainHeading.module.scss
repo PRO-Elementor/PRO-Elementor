@@ -1,0 +1,14 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  margin: 0 0 $gridSpacingNormal;
+}
+
+.title {
+  @include heading;
+}
+
+.subtitle {
+  @include copy;
+  margin: 8px 0 0;
+}

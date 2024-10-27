@@ -1,0 +1,6 @@
+@import '../../../../scss/mixins';
+
+.input {
+  @include inputBox;
+  width: 100%;
+}

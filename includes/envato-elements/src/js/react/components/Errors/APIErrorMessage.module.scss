@@ -1,0 +1,25 @@
+@import '../../../../scss/mixins';
+
+.debugWrapper {
+
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.debugInformation {
+  padding: 0 10px 15px;
+}
+
+.debugText {
+  white-space: pre-wrap;
+  word-break: break-all;
+  user-select: all;
+  height: 100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.copy {
+  @include copy;
+}

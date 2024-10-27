@@ -1,0 +1,257 @@
+@import '../../../../scss/mixins';
+
+.filter {
+  flex: 1;
+
+  &:hover {
+    .filterLabel {
+      z-index: 19;
+
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+
+    .filterAttributes {
+      display: block;
+      min-width: 150px;
+    }
+
+    .filterAttributesContent {
+      position: relative;
+
+      &::before {
+        // This is to prevent our drop down going away when we move our mouse down out of this div
+        content: '';
+        position: absolute;
+        display: block;
+        left: -15px;
+        right: -15px;
+        top: -78px;
+        bottom: -50px;
+        background: transparent;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.filterLabel {
+  z-index: 20;
+  height: $buttonAndInputHeight;
+  padding: 0 30px 0 12px;
+  line-height: $buttonAndInputHeight;
+  color: #767676;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '\f345';
+    opacity: 0.7;
+    margin-top: 0;
+    font-family: dashicons;
+    position: absolute;
+    right: 7px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.1s ease;
+    font-size: 16px;
+  }
+}
+
+.filterAttributes {
+  position: absolute;
+  right: -1px;
+  top: 130%;
+  display: none;
+  padding: 20px 10px;
+  background: #fff;
+  border: 1px solid #e0e5e9;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 8;
+  line-height: 30px;
+
+  [dir='rtl'] & {
+    right: unset;
+    left: -1px;
+  }
+
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+    [dir='rtl'] & {
+      right: unset;
+      left: 40px;
+    }
+  }
+
+  &::after {
+    border-color: transparent transparent #fff;
+    border-width: 10px;
+  }
+
+  &::before {
+    border-color: transparent transparent #e2e2e2;
+    border-width: 11px;
+  }
+
+  &[data-columns='2'] {
+    .filterAttributesContent {
+      column-count: 2;
+    }
+  }
+
+  &[data-columns='3'] {
+    .filterAttributesContent {
+      column-count: 3;
+    }
+  }
+
+  [type='checkbox'] {
+    &.filterAttributeCheckbox {
+      display: none;
+    }
+  }
+
+  &[data-variant='colors'] {
+    [type='checkbox'] {
+      &.filterAttributeCheckbox {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        border: 0;
+        border-radius: 5px;
+        margin-right: 13px;
+
+        &::before {
+          float: left;
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          font: normal 21px/1 dashicons;
+          speak: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        &:checked::before {
+          margin: 0 0 0 4px;
+          color: #fff;
+          content: '\f147';
+        }
+
+        &--pink { // sass-lint:disable-line class-name-format
+          background-color: #ff85ca;
+        }
+
+        &--red { // sass-lint:disable-line class-name-format
+          background-color: #ef3962;
+        }
+
+        &--orange { // sass-lint:disable-line class-name-format
+          background-color: #fb7058;
+        }
+
+        &--yellow { // sass-lint:disable-line class-name-format
+          background-color: #fee757;
+        }
+
+        &--green { // sass-lint:disable-line class-name-format
+          background-color: #1acb7e;
+        }
+
+        &--teal { // sass-lint:disable-line class-name-format
+          background-color: #1ddac2;
+        }
+
+        &--blue { // sass-lint:disable-line class-name-format
+          background-color: #349fe5;
+        }
+
+        &--purple { // sass-lint:disable-line class-name-format
+          background-color: #8966b7;
+        }
+
+        &--brown { // sass-lint:disable-line class-name-format
+          background-color: #7f5d60;
+        }
+
+        &--black { // sass-lint:disable-line class-name-format
+          background-color: #010101;
+        }
+
+        &--grey { // sass-lint:disable-line class-name-format
+          background-color: #d6d3e3;
+        }
+
+        &--white { // sass-lint:disable-line class-name-format
+          background-color: #fff;
+          border: 1px solid #eee;
+        }
+
+        &--yellow, // sass-lint:disable-line class-name-format
+        &--white { // sass-lint:disable-line class-name-format
+          &:checked::before {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  &[data-variant='checkbox'] {
+    [type='checkbox'] {
+      &.filterAttributeCheckbox {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #6d7781;
+        border-radius: 3px;
+        margin-right: 13px;
+
+        &::before {
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 11px;
+          height: 13px;
+          font: normal 13px/1 dashicons;
+          speak: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        &:checked::before {
+          margin: 0;
+          content: '\f147';
+        }
+      }
+    }
+  }
+
+}
+
+.filterAttribute {
+  padding: 0 10px;
+  color: $textColorLight;
+
+  &.filterAttributeActive,
+  &:hover {
+    color: $textColorDark;
+  }
+}

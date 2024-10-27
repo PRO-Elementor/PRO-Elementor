@@ -1,0 +1,107 @@
+@import '../../../../scss/mixins';
+
+.currentKit {
+  height: 40px;
+  padding: 0 30px 0 0;
+  line-height: 40px;
+  color: #767676;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '\f345';
+    opacity: 0.7;
+    margin-top: 0;
+    font-family: dashicons;
+    position: absolute;
+    right: 7px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.1s ease;
+    font-size: 16px;
+  }
+
+  &:hover {
+    &::after {
+      transform: rotate(90deg);
+    }
+
+    &::before {
+      // This is to prevent our drop down going away when we move our mouse down out of this div
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      top: 100%;
+      background: transparent;
+    }
+
+    .optionKitWrapper {
+      display: block;
+    }
+  }
+}
+
+.optionKitWrapper {
+  background: #fff;
+  border: 1px solid #e0e5e9;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  line-height: 30px;
+  min-width: 170px;
+  padding: 20px;
+  position: absolute;
+  left: -20px;
+  top: 130%;
+  white-space: nowrap;
+  z-index: 8;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::after {
+    left: 23px;
+    border-color: transparent transparent #fff;
+    border-width: 10px;
+  }
+
+  &::before {
+    left: 23px;
+    border-color: transparent transparent #e2e2e2;
+    border-width: 11px;
+  }
+}
+
+.optionKit {
+  padding: 0 30px;
+}
+
+.optionKitLink {
+  color: $textColorLight;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 5px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $textColorDark;
+  }
+}
+
+.optionKitLinkCurrent {
+  text-decoration: underline;
+}

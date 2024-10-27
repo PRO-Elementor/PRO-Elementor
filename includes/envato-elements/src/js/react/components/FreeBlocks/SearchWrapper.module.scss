@@ -1,0 +1,148 @@
+@import '../../../../scss/mixins';
+
+.headerWrapper {
+  align-self: center;
+  display: flex;
+}
+
+.blockCategoryName {
+  background: transparent;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.blockCategoryNameLink {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  color: $textColorDark;
+  display: block;
+  line-height: 60px;
+  margin: auto;
+  text-decoration: none;
+  width: 95%;
+}
+
+.currentBlockCategory {
+  height: 40px;
+  padding: 0 30px 0 0;
+  line-height: 40px;
+  color: #767676;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '\f345';
+    opacity: 0.7;
+    margin-top: 0;
+    font-family: dashicons;
+    position: absolute;
+    right: 7px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.1s ease;
+    font-size: 16px;
+  }
+
+  &:hover {
+    &::after {
+      transform: rotate(90deg);
+    }
+
+    &::before {
+      // This is to prevent our drop down going away when we move our mouse down out of this div
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      top: 100%;
+      background: transparent;
+    }
+
+    .optionBlockCategoryWrapper {
+      display: block;
+    }
+  }
+}
+
+.optionBlockCategoryWrapper {
+  background: #fff;
+  border: 1px solid #e0e5e9;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  line-height: 30px;
+  min-width: 170px;
+  padding: 20px;
+  position: absolute;
+  left: -20px;
+  top: 130%;
+  white-space: nowrap;
+  z-index: 8;
+  column-count: 2;
+
+  [dir='rtl'] & {
+    left: unset;
+    right: -20px;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::after {
+    left: 23px;
+    border-color: transparent transparent #fff;
+    border-width: 10px;
+
+    [dir='rtl'] & {
+      left: unset;
+      right: 23px;
+    }
+  }
+
+  &::before {
+    left: 23px;
+    border-color: transparent transparent #e2e2e2;
+    border-width: 11px;
+
+    [dir='rtl'] & {
+      left: unset;
+      right: 23px;
+    }
+  }
+}
+
+.optionBlockCategory {
+  padding: 0 30px;
+}
+
+.optionBlockCategoryLink {
+  color: $textColorLight;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 5px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $textColorDark;
+  }
+}
+
+.optionBlockCategoryLinkCurrent {
+  text-decoration: underline;
+}

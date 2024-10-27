@@ -1,0 +1,10 @@
+@import '../../../../scss/mixins';
+
+.input {
+  @include inputBox;
+  width: 390px;
+}
+
+.copy {
+  @include copy;
+}

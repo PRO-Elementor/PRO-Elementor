@@ -1,0 +1,53 @@
+@import '../../../../scss/mixins';
+
+.wrapper {
+  align-items: center;
+  background: #ffecdb;
+  box-shadow: 0 1px 0 rgba(239, 133, 57, 0.4);
+  color: #ef8539;
+  padding: 15px 20px;
+  margin: -20px -20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice {
+  @include copy;
+}
+
+.requirements {
+  margin: 0 0 $gridSpacingNormal;
+}
+
+.requirement {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.status {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@keyframes iconSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.installingIcon {
+  animation: iconSpin 4s linear infinite;
+}
+
+.cssPreview {
+  max-height: 50vh;
+  overflow-y: auto;
+}

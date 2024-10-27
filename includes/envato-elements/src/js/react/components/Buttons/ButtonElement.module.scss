@@ -1,0 +1,97 @@
+@import '../../../../scss/mixins';
+
+.button {
+  border-radius: 4px;
+  padding: 0 12px;
+  min-height: $buttonAndInputHeight;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  @media screen and (min-width: 1281px) {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+}
+
+.ghost {
+  @extend .button;
+  background: #fff;
+  border: 1px solid #81b441;
+  color: #81b441;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #639623;
+    border-color: #639623;
+    color: #fff;
+  }
+}
+
+.primary {
+  @extend .button;
+  background: #81b441;
+  border: 1px solid #81b441;
+  color: #fff;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #639623;
+    border-color: #639623;
+    color: #fff;
+  }
+}
+
+.secondary {
+  @extend .button;
+  background: #fff;
+  border: 1px solid #979797;
+  color: #979797;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: #23282d;
+    color: #23282d;
+  }
+}
+
+.warning {
+  @extend .button;
+  background: #fff;
+  border: 1px solid #ef3962;
+  color: #ef3962;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #ef3962;
+    color: #fff;
+  }
+}
+
+.attention {
+  @extend .button;
+  background: #fff;
+  border: 1px solid #ef8539;
+  color: #ef8539;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #ef8539;
+    color: #fff;
+  }
+}
