@@ -4,7 +4,7 @@ Tags: elementor, elements, template kits
 Requires at least: 6.0  
 Tested up to: 6.6.2  
 Requires PHP: 7.4  
-Stable tag: 2.2.0  
+Stable tag: 2.3.0  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -48,6 +48,9 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+= 2.3.0 - 2024-11-05 =
+* Tweak: Upgraded Elementor Pro core version to 3.25.2.
+
 = 2.2.0 - 2024-11-01 =
 * Tweak: Upgraded Elementor Pro core version to 3.25.0.
 

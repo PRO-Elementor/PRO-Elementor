@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.3.0] - 2024-11-05
+- **Tweak**: Upgraded Elementor Pro core version to 3.25.2.
+
 ## [2.2.0] - 2024-11-01
 - **Tweak**: Upgraded Elementor Pro core version to 3.25.0.
 
