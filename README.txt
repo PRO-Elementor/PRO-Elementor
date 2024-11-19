@@ -1,12 +1,12 @@
 === PRO Elementor ===
-Contributors: PRO-Elementor.com  
-Tags: elementor, elements, template kits  
-Requires at least: 6.0  
-Tested up to: 6.6.2  
-Requires PHP: 7.4  
-Stable tag: 2.3.0  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+Contributors: PRO-Elementor.com
+Tags: elementor, elements, template kits
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+Stable tag: 2.4.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynamic colors & content, forms & popup builder, and more. You can choose from hundreds of free and premium template kits to build entire websites in a few clicks.
@@ -31,16 +31,16 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 - And much more!
 
 === Browse and Import Template Kits without Leaving WordPress ===
-- **Free Template Kits for Elementor**  
+- **Free Template Kits for Elementor**
   Access to try thousands of free page and block templates to use within Elementor. All you need to do is browse, import, then customize.
 
-- **Premium Template Kits for Elementor**  
+- **Premium Template Kits for Elementor**
   Professionally designed, code-free & fully flexible. Full page templates, or block templates, available for Pro/Agency plan.
 
-- **No Restrictions**  
+- **No Restrictions**
   Import as many Template Kits and photos as you want to fully customize your website.
 
-- **Use with Elementor**  
+- **Use with Elementor**
   Easily create websites with the world’s leading WordPress page builder.
 
 == Installation ==
@@ -48,6 +48,9 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+= 2.4.0 - 2024-11-20 =
+* Tweak: Upgraded Elementor Pro core version to 3.25.3.
+
 = 2.3.0 - 2024-11-05 =
 * Tweak: Upgraded Elementor Pro core version to 3.25.2.
 
