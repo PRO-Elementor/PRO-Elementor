@@ -1,0 +1,80 @@
+@keyframes bounceDot {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+$dotSize: 16px;
+
+.wrap {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  margin: 100px auto;
+  animation: fadein 1s;
+  padding-top: $dotSize;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    background-color: #523ee8;
+    border-radius: 50%;
+    margin: 0 7px;
+    animation: bounceDot 1.1s -0.6s linear infinite;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    background-color: #f73859;
+    border-radius: 50%;
+    margin: 0 7px;
+    animation: bounceDot 1.1s 0s linear infinite;
+  }
+}
+
+.inner {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    background-color: #6d47d9;
+    border-radius: 50%;
+    margin: 0 7px;
+    animation: bounceDot 1.1s -0.4s linear infinite;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    background-color: #f7bc28;
+    border-radius: 50%;
+    margin: 0 7px;
+    animation: bounceDot 1.1s -0.2s linear infinite;
+  }
+}

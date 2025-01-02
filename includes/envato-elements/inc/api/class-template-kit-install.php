@@ -37,6 +37,14 @@ class Template_Kit_Install extends API {
 	 */
 	public function install_template_kit_from_elements( $request ) {
 
+        if ( ! current_user_can( 'install_themes' ) ) {
+            return $this->format_error(
+                'installTemplateKit',
+                'missing_permissions',
+                'Please contact your administrator to perform this action.'
+            );
+        }
+
 		$template_kit_humane_id = $request->get_param( 'templateKitId' );
 
 		// If the user doesn't have a paid subscription we return an invalid subscription message
@@ -167,6 +175,14 @@ class Template_Kit_Install extends API {
 	 */
 	public function install_free_template_kit( $request ) {
 
+        if ( ! current_user_can( 'install_themes' ) ) {
+            return $this->format_error(
+                'installTemplateKit',
+                'missing_permissions',
+                'Please contact your administrator to perform this action.'
+            );
+        }
+
 		$template_kit_id      = $request->get_param( 'templateKitId' );
 		$template_kit_zip_url = $request->get_param( 'zipUrl' );
 
@@ -216,6 +232,14 @@ class Template_Kit_Install extends API {
 	 */
 	public function upload_template_kit_zip_file( $request ) {
 
+        if ( ! current_user_can( 'install_themes' ) ) {
+            return $this->format_error(
+                'installTemplateKit',
+                'missing_permissions',
+                'Please contact your administrator to perform this action.'
+            );
+        }
+
 		Limits::get_instance()->raise_limits();
 
 		$all_files = $request->get_file_params();
@@ -255,6 +279,15 @@ class Template_Kit_Install extends API {
 	 * @param $request \WP_REST_Request
 	 */
 	public function delete_template_kit( $request ) {
+
+        if ( ! current_user_can( 'install_themes' ) ) {
+            return $this->format_error(
+                'installTemplateKit',
+                'missing_permissions',
+                'Please contact your administrator to perform this action.'
+            );
+        }
+
 		$template_kit_id = $request->get_param( 'templateKitId' );
 		Template_Kits::get_instance()->delete_template_kit( $template_kit_id );
 

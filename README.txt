@@ -4,50 +4,58 @@ Tags: elementor, elements, template kits
 Requires at least: 6.0  
 Tested up to: 6.7.1  
 Requires PHP: 7.4  
-Stable tag: 2.7.0  
+Stable tag: 2.7.1  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
-== Description ==  
-This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynamic colors & content, forms & popup builder, and more. You can choose from hundreds of free and premium template kits to build entire websites in a few clicks.
+== Description ==
 
-=== What is included? ===  
-- All PRO widgets  
-- Theme Builder with display conditions  
-- Popup Builder  
-- Form Builder with multistep forms  
-- WooCommerce Builder  
-- Marketing tools integration  
-- Full site editor  
-- Global widget  
-- Motion effects  
-- Scrolling and mouse effects  
-- Global Custom CSS  
-- Custom fonts with TypeKit integration  
-- Dynamic colors and content  
-- Role manager  
-- 150+ free Elementor template kits  
-- 2,300+ free individual templates  
-- And much more!
+This plugin enables Elementor Pro features such as advanced widgets, theme builder, dynamic colors and content, form and popup builder, and more. You can choose from hundreds of free and premium template kits to build entire websites in a few clicks. 
 
-=== Browse and Import Template Kits without Leaving WordPress ===  
-- **Free Template Kits for Elementor**  
-  Access to try thousands of free page and block templates to use within Elementor. All you need to do is browse, import, then customize.
+== Features ==
 
-- **Premium Template Kits for Elementor**  
-  Professionally designed, code-free & fully flexible. Full page templates, or block templates, available for Pro/Agency plan.
+* **All PRO Widgets** – Unlock all the professional widgets for Elementor.
+* **Theme Builder with Display Conditions** – Fully customize your theme with display conditions.
+* **Popup Builder** – Create eye-catching popups for any part of your website.
+* **Form Builder with Multistep Forms** – Build forms with multiple steps for a streamlined user experience.
+* **WooCommerce Builder** – Customize your WooCommerce store pages.
+* **Marketing Tools Integration** – Connect marketing tools to enhance your site’s functionality.
+* **Full Site Editor** – Edit the entire website design without writing code.
+* **Global Widgets** – Create reusable global widgets across your site.
+* **Motion & Scrolling Effects** – Add motion and mouse scroll effects for a dynamic user experience.
+* **Global Custom CSS** – Add custom CSS to your entire site for more control over styling.
+* **Custom Fonts with TypeKit Integration** – Access additional fonts via TypeKit integration.
+* **Dynamic Colors & Content** – Create dynamic pages using custom colors and content that change automatically.
+* **Role Manager** – Manage access levels for different user roles within Elementor.
+* **150+ Free Template Kits** – Access 150+ professionally designed free template kits.
+* **2,300+ Free Individual Templates** – Import over 2,300 free templates for your pages.
+* **Premium Template Kits** – Available for Pro/Agency plan users, offering full-page or block templates.
+* **No Restrictions** – Import as many templates and images as you want to fully customize your website.
 
-- **No Restrictions**  
-  Import as many Template Kits and photos as you want to fully customize your website.
+== Installation ==
 
-- **Use with Elementor**  
-  Easily create websites with the world’s leading WordPress page builder.
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Use the plugin's features within Elementor to enhance your site.
 
-== Installation ==  
-1. Upload `pro-elementor.zip` to the `/wp-content/plugins/` directory, then unzip it.  
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+== Frequently Asked Questions ==
+
+= What is PRO Elementor and why do I need it? =
+
+PEO Elementor is a premium WordPress page builder that gives you more control over your website design. This plugin enables all the advanced features of Elementor Pro to help you create a fully customized, professional-looking site.
+
+= Do I need Elementor to use this plugin? =
+
+Yes, this plugin works only in combination with the Elementor page builder. You will need to have Elementor installed and activated on your site.
+
+= Can I use the Template Kits? =
+
+Yes, you can browse and import template kits directly within PRO Elementor. Choose from hundreds of free and premium templates to build your pages quickly.
 
 == Changelog ==  
+= 2.7.1 - 2025-01-03 =  
+* Fix: Bug fixes.
+
 = 2.7.0 - 2024-12-31 =  
 * Tweak: Upgraded Elementor Pro core version to 3.26.1.
 
@@ -121,5 +129,5 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 * First release.
 
 == Upgrade Notice ==  
-= 2.7.0 =  
-This version upgrades the Elementor Pro core version to 3.26.1 for enhanced features and performance improvements.
+= 2.7.1 =  
+This update includes important bug fixes to ensure smoother performance and address issues from the previous version. It's highly recommended to upgrade to this version for optimal functionality and stability.

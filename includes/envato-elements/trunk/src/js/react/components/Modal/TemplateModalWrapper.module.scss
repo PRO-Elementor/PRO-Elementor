@@ -1,0 +1,82 @@
+@import '../../../../scss/mixins';
+
+.modalInner {
+  width: 800px;
+  min-height: 200px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  color: $textColorLight;
+
+  p {
+    @include copy;
+  }
+}
+
+.modalHeader {
+  align-items: center;
+  background-color: #26292c;
+  display: flex;
+  flex-direction: row;
+  padding: 7px 13px;
+}
+
+$leftRightGutter: 240px;
+
+.modalLogo {
+  flex: 0 0 $leftRightGutter;
+}
+
+.headerTitle {
+  color: #fff;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.headerActions {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex: 0 0 $leftRightGutter;
+}
+
+.closeButton {
+  cursor: pointer;
+  color: #919191;
+  border: 0;
+  background: transparent;
+  margin-left: 12px;
+  padding-right: 6px;
+  display: flex;
+
+  [dir='rtl'] & {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    border-left: 1px solid #a5afb7;
+    color: #fff;
+    margin-right: 10px;
+    height: 20px;
+    opacity: 0.3;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+}
+
+.dismissIcon {
+  @include dismiss;
+}
+
+.kitInner {
+  overflow-y: auto;
+  padding: 0 30px 30px;
+}

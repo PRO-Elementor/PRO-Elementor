@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1%;
+  width: 102%;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.cardSpacing {
+  flex: 1;
+}
