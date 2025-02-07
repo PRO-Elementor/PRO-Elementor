@@ -112,7 +112,7 @@ class Pro_Elementor_Admin {
 	public function text_strings( $translated_text, $text, $domain ) {
 		switch ( $translated_text ) {
 			case 'Pro Elements':
-				$translated_text = __( 'Pro Elementor', 'elementor-pro' );
+				$translated_text = __( 'PRO Elementor', 'elementor-pro' );
 				break;
 
 			case 'Pro Elements plugin requires installing the Elementor plugin':
@@ -128,7 +128,7 @@ class Pro_Elementor_Admin {
 				break;
 
 			case '%1$sPro Elements  requires newer version of the Elementor plugin%2$s Update the Elementor plugin to reactivate the Pro Elements plugin.':
-				$translated_text = __( '%1$sPRO Elementor  requires newer version of the Elementor plugin%2$s Update the Elementor plugin to reactivate the PRO Elementor plugin.', 'elementor-pro' );
+				$translated_text = __( '%1$sPRO Elementor requires newer version of the Elementor plugin%2$s Update the Elementor plugin to reactivate the PRO Elementor plugin.', 'elementor-pro' );
 				break;
 		}
 
