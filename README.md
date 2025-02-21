@@ -3,9 +3,9 @@
 **Contributors:** [PRO-Elementor.com](https://pro-elementor.com)
 **Tags:** elementor, elements, template kits
 **Requires at least:** 6.0
-**Tested up to:** 6.7.1
+**Tested up to:** 6.7.2
 **Requires PHP:** 7.4
-**Stable tag:** 3.0.0
+**Stable tag:** 3.1.0
 **License:** GPLv2 or later
 **License URI:** [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 
@@ -18,6 +18,7 @@ Enable PRO features in the Elementor page builder. Create professional websites 
 This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynamic colors & content, forms & popup builder, and more. You can choose from hundreds of free and premium template kits to build entire websites in a few clicks.
 
 ### What is included?
+
 - All PRO widgets
 - Theme Builder with display conditions
 - Popup Builder
@@ -37,6 +38,7 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 - And much more!
 
 ### Browse and Import Template Kits without Leaving WordPress
+
 - **Free Template Kits for Elementor**
   Access to try thousands of free page and block templates to use within Elementor. All you need to do is browse, import, then customize.
 
@@ -55,6 +57,7 @@ This plugin enables GPL features of Elementor Pro: widgets, theme builder, dynam
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 ### Awesome Collections of Best Template Kits
+
 - [Best Free Elementor Template Kits for WordPress Websites](https://pro-elementor.com/best-free-elementor-template-kits-for-wordpress-websites/)
 - [Best Business & Services Elementor Template Kits](https://pro-elementor.com/best-business-services-elementor-template-kits/)
 - [Best Creative & Design Elementor Template Kits](https://pro-elementor.com/best-creative-design-elementor-template-kits/)
