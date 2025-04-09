@@ -16,7 +16,7 @@
  * Plugin Name:       PRO Elementor
  * Plugin URI:        https://pro-elementor.com
  * Description:       Enable PRO features in the Elementor page builder. Create professional websites faster than ever with hundreds of premium Elementor Template Kits. Fully flexible and ready to use with zero code. Note: Please deactivate Elementor Pro, PRO Elements, or Envato Elements plugins first if you have any of them activated.
- * Version:           3.1.0
+ * Version:           3.2.1
  * Author:            PRO-Elementor.com
  * Author URI:        https://pro-elementor.com
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'PRO_ELEMENTOR_VERSION', '3.1.0' );
+define( 'PRO_ELEMENTOR_VERSION', '3.2.1' );
 
 /**
  * The URL our updater / license checker pings.
