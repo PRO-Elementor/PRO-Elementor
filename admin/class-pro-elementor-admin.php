@@ -215,14 +215,9 @@ class Pro_Elementor_Admin {
 	 * @return    void
 	 */
 	public function pro_elementor_license_key_settings_section() {
-		if ( empty( get_option( 'pro_elementor_license_key' ) ) || 'free' === get_option( 'pro_elementor_license_type' ) ) {
-			printf( '<div class="notice notice-info">%s. <a href="%s" target="_blank">Grab it now</a>!</div>',
-				__( 'Use discount code <b>WELCOME</b> and get up to 50% off', 'pro-elementor' ),
-				'https://pro-elementor.com/pricing/'
-			);
-		}
+		if ( empty( get_option( 'pro_elementor_license_key' ) ) || 'free' === get_option( 'pro_elementor_license_type' ) )
 
-		echo '<p>' . esc_html__( 'Activate your license to enjoy the benefits of automatic updates and access to hundreds of premium Elementor Template Kits.', 'pro-elementor' ) . '</p>';
+		echo '<p>' . esc_html__( 'Activate your license to enjoy the benefits of automatic updates and access to hundreds of premium Elementor Template Kits. Please ensure you click the "Save" button to store the license key first, then click the "Activate License" button to activate it.', 'pro-elementor' ) . '</p>';
 	}
 
 	/**
