@@ -4,7 +4,7 @@ Tags: elementor, elements, template kits
 Requires at least: 6.0
 Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 3.2.2
+Stable tag: 3.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,10 @@ Yes, this plugin works only in combination with the Elementor page builder. You 
 Yes, you can browse and import template kits directly within PRO Elementor. Choose from hundreds of free and premium templates to build your pages quickly.
 
 == Changelog ==
+
+## [3.3.0] - 2025-05-23
+
+- **Tweak**: Upgraded Elementor Pro core version to 3.29.0.
 
 = 3.1.0 - 2025-02-22 =
 * **Tweak**: Upgraded Elementor Pro core version to 3.27.4.
